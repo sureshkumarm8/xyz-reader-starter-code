@@ -61,55 +61,54 @@
                             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
                     </android.support.v7.widget.Toolbar>
                 </android.support.design.widget.CollapsingToolbarLayout>
-
     </android.support.design.widget.AppBarLayout>
 
-<android.support.v4.widget.NestedScrollView
-    android:id="@+id/scrollview"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_anchor="@id/main.appbar"
-    app:layout_anchorGravity="bottom|center"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-    <com.example.xyzreader.ui.MaxWidthLinearLayout
-        android:id="@+id/meta_bar"
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/detail_metabar_vert_padding"
-        android:background="@color/primary_light"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/detail_metabar_vert_padding"
-        android:paddingLeft="@dimen/detail_inner_horiz_margin"
-        android:paddingRight="@dimen/detail_inner_horiz_margin"
-        android:paddingTop="@dimen/detail_metabar_vert_padding"
-        app:elevation="@dimen/meta_bar_elevation">
+        android:layout_height="match_parent"
+        app:layout_anchor="@id/main.appbar"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <TextView
-            android:id="@+id/article_byline"
-            style="?android:attr/textAppearanceSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/article_byline_bottom_margin"
-            android:paddingTop="@dimen/article_byline_top_margin"
-            android:textColor="@color/colorAccent" />
-
-        <TextView
-            android:id="@+id/article_body"
-            style="?android:attr/textAppearanceMedium"
+        <com.example.xyzreader.ui.MaxWidthLinearLayout
+            android:id="@+id/meta_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/detail_inner_horiz_margin"
-            android:layout_marginRight="@dimen/detail_inner_horiz_margin"
-            android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
-            android:paddingBottom="@dimen/detail_body_bottom_margin"
-            android:textColor="@color/primary_text"
-            android:textColorLink="@color/colorAccent"
-            android:textSize="@dimen/detail_body_text_size" />
-    </com.example.xyzreader.ui.MaxWidthLinearLayout>
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/detail_metabar_vert_padding"
+            android:background="@color/primary_light"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/detail_metabar_vert_padding"
+            android:paddingLeft="@dimen/detail_inner_horiz_margin"
+            android:paddingRight="@dimen/detail_inner_horiz_margin"
+            android:paddingTop="@dimen/detail_metabar_vert_padding"
+            app:elevation="@dimen/meta_bar_elevation">
 
-</android.support.v4.widget.NestedScrollView>
+            <TextView
+                android:id="@+id/article_byline"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/article_byline_bottom_margin"
+                android:paddingTop="@dimen/article_byline_top_margin"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/article_body"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_inner_horiz_margin"
+                android:layout_marginRight="@dimen/detail_inner_horiz_margin"
+                android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
+                android:paddingBottom="@dimen/detail_body_bottom_margin"
+                android:textColor="@color/primary_text"
+                android:textColorLink="@color/colorAccent"
+                android:textSize="@dimen/detail_body_text_size" />
+        </com.example.xyzreader.ui.MaxWidthLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
         style="@style/FabStyle"
