@@ -16,10 +16,27 @@
 -->
 
 <resources>
+    <!--<color name="photo_placeholder">#ccc</color>-->
+    <color name="ltgray">#ffe0e0e0</color>
+
+    <color name="primary">#607D8B</color>
+    <color name="primary_dark">#455A64</color>
+    <color name="primary_light">#CFD8DC</color>
+    <color name="colorAccent">#8BC34A</color>
+    <!--<color name="primary_text">#212121</color>-->
+    <!--<color name="secondary_text">#665D75</color>-->
+    <color name="icons">#ffe0e0e0</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="colorArticleBylineText">#8fff</color>
+    <color name="cardview_subtitle_textColor">#393939</color>
+    <color name="status_bar">#76BCFF</color>
+
     <color name="photo_placeholder">#ccc</color>
 
-    <color name="theme_primary">#04561A</color>
-    <color name="theme_primary_dark">#04561A</color>
-    <color name="theme_accent">#04561A</color>
-    <color name="ltgray">#ffe0e0e0</color>
+    <color name="dark_primary_color">#455A64</color>
+    <color name="primary_color">#607D8B</color>
+    <color name="text_icon">#FFFFFF</color>
+    <color name="accent_color">#8BC34A</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
 </resources>
