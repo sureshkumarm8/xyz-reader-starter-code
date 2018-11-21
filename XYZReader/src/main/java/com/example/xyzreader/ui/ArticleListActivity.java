@@ -59,16 +59,21 @@ public class ArticleListActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mToolbar = findViewById(R.id.toolbar);
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.primary)); //status bar or the time bar at the top
         }
 
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
+        mSwipeRefreshLayout =  findViewById(R.id.swipe_refresh_layout);
 
-        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
-
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        mRecyclerView =  findViewById(R.id.recycler_view);
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refresh();
+            }
+        });
+        
         getLoaderManager().initLoader(0, null, this);
 
         if (savedInstanceState == null) {
